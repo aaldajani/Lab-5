@@ -1,3 +1,10 @@
 from django.db import models
 
-# Create your models here.
+class Person:
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+
+    def __str__(self):
+        return self.username
+
